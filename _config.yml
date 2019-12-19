@@ -21,9 +21,11 @@ url: "https://mrblacyk.github.io"
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-#   Resources:
-#     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-#     - Learn markdown: "http://www.markdowntutorial.com/"
+  Good stuff:
+    - Atomic Threat Coverage: "https://github.com/atc-project/atomic-threat-coverage"
+    - MITRE ATT&CK: "https://attack.mitre.org/"
+    - HackTheBox: "https://www.hackthebox.eu/"
+    - PortSwigger Academy: "https://portswigger.net/web-security"
 #   Author's home: "https://mrblacyk.github.io"
 
 # Image to show in the navigation bar - image must be a square (width = height)
