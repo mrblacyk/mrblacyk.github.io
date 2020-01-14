@@ -9,7 +9,7 @@ title: Kali Linux on Raspberry over Bluetooth! Whaaat?
 
 Hey!
 
-In this post I will configure my Raspberry Pi to have a pseudo terminal available over the bluetooth. At the end I will 
+In this post I configure my Raspberry Pi to have a pseudo terminal available over the bluetooth. 
 
 # Why
 
