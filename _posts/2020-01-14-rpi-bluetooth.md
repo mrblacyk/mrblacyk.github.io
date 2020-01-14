@@ -13,7 +13,7 @@ In this post I will configure my Raspberry Pi to have a pseudo terminal availabl
 
 # Why
 
-As I recently passed OSCP (humble brag), my mindset was focused on pwning stuff. However, I'm not working in offensive side of the cybersecurity so I just let my imagination run wild about red teaming exercises in real life. I came up with an idea of having Kali linux on my Raspberry Pi 3 B+ with the terminal available over blueooth. Go "in the field", have the RPI running of some powerbank in a backpack and connect to it using a laptop. In case I'm caught, first a [kill cord for a laptop](https://tech.michaelaltfield.net/2020/01/02/buskill-laptop-kill-cord-dead-man-switch/) should power off the device and Raspberry Pi should be another layer of "obfuscation". I didn't cover encryption of Raspberry here because encrypting the disk on a microSD which has very limited write amounts does not make a sense for a long term project. Well, this all sounds like a gimmick, doesn't it? But it didn't stop me anyway, I wanted to test it :D
+As I recently passed OSCP (humble brag), my mindset was focused on pwning stuff. However, I'm not working in offensive side of the cybersecurity so I just let my imagination run wild about red teaming exercises in real life. I came up with an idea of having Kali linux on my Raspberry Pi 3 B+ with the terminal available over blueooth. Go "in the field", have the RPI running of some powerbank in a backpack and connect to it using a laptop. In case I'm caught, first a [kill cord for a laptop](https://tech.michaelaltfield.net/2020/01/02/buskill-laptop-kill-cord-dead-man-switch/) should power off the device and Raspberry Pi should be another layer of "obfuscation". I didn't cover encryption of Raspberry here because encrypting the disk on a microSD which has very limited write amounts does not make sense for a long term project. Well, this all sounds like a gimmick, doesn't it? But it didn't stop me anyway, I wanted to test it :D
 
 # How
 
@@ -265,7 +265,7 @@ So my plan was pretty simple:
 
 # Worth it?
 
-Actually, it may be a weird behavior of my Raspberry unit but I found this bluetooth channel bein very unstable. If I fire up this setup at home with very few WiFi networks and IoT devices talking over bluetooth, it's actually pretty stable. However, when I was trying to do anything at my work place with dozens of laptops and other bluetooth-speaking devices, I could connect, see the terminal and then it just hung. Sometimes it let me connect once again after about 15 minutes but sometimes I had to restart the Raspberry Pi. So unfortunatelly I don't think it's a suitable setup for a wanna-be red teamer.
+Actually, it may be a weird behavior of my Raspberry unit but I found this bluetooth channel being very unstable. If I fire up this setup at home with very few WiFi networks and IoT devices talking over bluetooth, it's actually pretty stable. However, when I was trying to do anything at my work place with dozens of laptops and other bluetooth-speaking devices, I could connect, see the terminal and then it just hung. Sometimes it let me connect once again after about 15 minutes but sometimes I had to restart the Raspberry Pi. So unfortunatelly I don't think it's a suitable setup for a wanna-be red teamer.
 
 <center>
 <img src="{{ site.url }}/img/grumpy.jpg"/>
