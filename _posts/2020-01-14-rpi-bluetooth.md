@@ -118,9 +118,7 @@ So my plan was pretty simple:
 
         Wow! Such protection! So many to choose from! I enabled them all, what can I say. Here's what happened:
         <center>
-        <img src="{{ site.url }}/img/kali_rpi_1.jpg/>
-
-<img src="{{ site.url }}/img/meme.jpg"/>
+        <img src="{{ site.url }}/img/kali_rpi_1.jpg"/><br/><img src="{{ site.url }}/img/meme.jpg"/>
         </center>
 
         In the end, the combination which only worked for me was the standalone switch `-E`.
