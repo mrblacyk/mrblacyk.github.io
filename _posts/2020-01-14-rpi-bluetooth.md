@@ -4,7 +4,7 @@ title: Kali Linux on Raspberry over Bluetooth! Whaaat?
 ---
 
 <center>
-![Kali ARM]({{ site.url }}/img/kali_arm.png)
+<img src="{{ site.url }}/img/kali_arm.png"/>
 </center>
 
 Hey!
@@ -33,7 +33,7 @@ So my plan was pretty simple:
 
     [https://www.offensive-security.com/kali-linux-arm-images/](https://www.offensive-security.com/kali-linux-arm-images/)
     <center>
-    ![Kali ARM Image]({{ site.url }}/img/kali_arm.png)
+<img src="{{ site.url }}/img/kali_arm.png"/>
     </center>
     Every good blog has images so here we go. When it comes to the image name, I went with "Kali Linux RaspberryPi 2 (v1.2), 3 and 4 64-Bit
     " just because my RPI has 64-bit CPU so why make it suffer running 32-bit OS. your mileage may vary.
@@ -62,7 +62,7 @@ So my plan was pretty simple:
 
     This is a border for those of you to which mounting a partition is not an easy peasy thing. This suggets that probably you need to gain a little bit of more familiarity with \*NIX overall.
     <center>
-    ![Roadblock]({{ site.url }}/img/roadblock.jpg)
+<img src="{{ site.url }}/img/roadblock.jpg"/>
     </center>
 5. Network interfaces
 
@@ -120,13 +120,13 @@ So my plan was pretty simple:
         <center>
         ![Error upon connecting](kali_rpi_1.jpg)
 
-        ![My TOP10 meme]({{ site.url }}/img/meme.jpg)
+<img src="{{ site.url }}/img/meme.jpg"/>
         </center>
 
         In the end, the combination which only worked for me was the standalone switch `-E`.
         
         <center>
-        ![It's something]({{ site.url }}/img/something.jpg)
+<img src="{{ site.url }}/img/something.jpg"/>
         </center>
 
         I tried sniffing bluetooth packets using Wireshark but apparently nowadays laptops have chips which do not allow sniffing someone's else traffic. Unfortunatelly, I don't have bluetooth dongle lying around. Note to myself: I should buy it one day though. Nevermind, let's go! 
@@ -268,5 +268,5 @@ So my plan was pretty simple:
 Actually, it may be a weird behavior of my Raspberry unit but I found this bluetooth channel bein very unstable. If I fire up this setup at home with very few WiFi networks and IoT devices talking over bluetooth, it's actually pretty stable. However, when I was trying to do anything at my work place with dozens of laptops and other bluetooth-speaking devices, I could connect, see the terminal and then it just hung. Sometimes it let me connect once again after about 15 minutes but sometimes I had to restart the Raspberry Pi. So unfortunatelly I don't think it's a suitable setup for a wanna-be red teamer.
 
 <center>
-![Grumpy Cat]({{ site.url }}/img/grumpy.jpg)
+<img src="{{ site.url }}/img/grumpy.jpg"/>
 </center>
