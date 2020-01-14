@@ -33,7 +33,7 @@ So my plan was pretty simple:
 
     [https://www.offensive-security.com/kali-linux-arm-images/](https://www.offensive-security.com/kali-linux-arm-images/)
     <center>
-<img src="{{ site.url }}/img/kali_arm.png"/>
+<img src="{{ site.url }}/img/kali_arm_rpi.png"/>
     </center>
     Every good blog has images so here we go. When it comes to the image name, I went with "Kali Linux RaspberryPi 2 (v1.2), 3 and 4 64-Bit
     " just because my RPI has 64-bit CPU so why make it suffer running 32-bit OS. your mileage may vary.
