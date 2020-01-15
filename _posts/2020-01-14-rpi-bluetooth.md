@@ -195,7 +195,7 @@ So my plan was pretty simple:
     > 
     ```
 
-    We localized a network (`FOURTH_WIFI`) to which I know password, let's configure the WPA Client to got and connect to it. This process is also straight forward an involves fours steps:
+    We localized a network (`FOURTH_WIFI`) to which I know password, let's configure the WPA Client to get and connect to it. This process is also straight forward an involves four steps:
 
     1. Add a new network which we can then configure
     2. Set a proper SSID for this network
