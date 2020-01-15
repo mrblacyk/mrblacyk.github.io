@@ -36,9 +36,9 @@ So my plan was pretty simple:
 <img src="{{ site.url }}/img/kali_arm_rpi.png"/>
     </center>
     Every good blog has images so here we go. When it comes to the image name, I went with "Kali Linux RaspberryPi 2 (v1.2), 3 and 4 64-Bit
-    " just because my RPI has 64-bit CPU so why make it suffer running 32-bit OS. your mileage may vary.
+    " just because my RPI has 64-bit CPU so why make it suffer running 32-bit OS. Your mileage may vary.
 
-2. Unzip `.xz` file
+2. Unpack `.xz` file
 
     This is a straight forward step. I found `7z` of being very friendly archive app. Not only it supports this weird `.xz` extension but also classic tarball (`.tar`) and gzipped tarball (`tar.gz`). If there is an archive to unpack, I just throw it to `7z` and it gets the job done.
 
@@ -51,7 +51,7 @@ So my plan was pretty simple:
 
     Did I mention already that I'm following [Offensive Security documentation](https://www.kali.org/docs/arm/kali-linux-raspberry-pi/) on how to install Kali? Well, I did now. Now you know.
 
-    Notice in the the command below that you must point the correct output device (`/dev/sdX`, it's a whole device - not a single partition like `/dev/sdX1`!). If you only have one partition, I bet it's `/dev/sdb` but make sure to check it using utilities like `fdisk`. Oh, and of course, I already took my microSD card, put it in the SD adapter and pushed it into SD reader carefully enough to not switch the physical read-only switch on the adapter.
+    Notice in the the command below that you must point the correct output device (`/dev/sdX`, it's a whole device - not a single partition like `/dev/sdX1`!). If you only have one disk, I bet the microSD is under `/dev/sdb` but make sure to check it using utilities like `fdisk`. Oh, and of course, I already took my microSD card, put it in the SD adapter and pushed it into SD reader carefully enough to not switch the physical read-only switch on the adapter.
 
     ```
     # Do the magic (copy)
@@ -60,7 +60,7 @@ So my plan was pretty simple:
 
 4. Mount second partition
 
-    This is a border for those of you to which mounting a partition is not an easy peasy thing. This suggets that probably you need to gain a little bit of more familiarity with \*NIX overall.
+    This is a border for those of you to which mounting a partition is not an easy peasy thing. This suggets that probably you need to gain a little bit of more familiarity with \*NIX systems overall.
     <center>
 <img src="{{ site.url }}/img/roadblock.jpg"/>
     </center>
@@ -82,7 +82,7 @@ So my plan was pretty simple:
 
 7. Run the RPI and connect an Ethernet cable
 
-    So this is a big moment now (obviously there are others to come, duh). First run of our newly installed Operating System. If you connected the HDMI cable you can observer the [rainbow box](https://lifehacker.com/what-the-raspberry-pis-rainbow-boot-screen-and-rainbow-1768470271) ..aaaaand first couple of lines starts filling the screen. Voila!
+    So this is a first big moment now (obviously there are others to come, duh). First run of our newly installed Operating System. If you connected the HDMI cable you can observe the [rainbow box](https://lifehacker.com/what-the-raspberry-pis-rainbow-boot-screen-and-rainbow-1768470271) ..aaaaand first couple of lines starts filling the screen. Voila!
 
     Make sure to connect all the cables so the next step will not become harder than it should be.
 
@@ -105,10 +105,10 @@ So my plan was pretty simple:
 
     This step has hidden substep meant to be done before doing anything else. Establish secure shell connection with the Raspberry Pi with the default credentials which Kali has. Oh and I would change the password if I were you.
 
-    I don't want to double information so I'm sending you to the [original post](https://hacks.mozilla.org/2017/02/headless-raspberry-pi-configuration-over-bluetooth/) for further steps. In short, you set up a bluetooth so that upon connection, a pseudo terminal is presented to you. I tried tinkering with it but in the end I just accepted that it will not meet my expectations in terms of the security.
+    I don't want to double the information so I'm sending you to the [original post](https://hacks.mozilla.org/2017/02/headless-raspberry-pi-configuration-over-bluetooth/) for further steps. In short, you set up a bluetooth in raspberry so that upon connection, a pseudo terminal is presented to you. I tried tinkering with it but in the end I just accepted that it will not meet my expectations in terms of the security.
 
     * First of all, this `rfcomm` is perfoming auto-logon. This was easy to change - just remove `-a pi` from the `ExectStart` attribute of `[Service]` in the `/etc/systemd/system/rfcomm.service` file. 
-    * Second thing, this bluetooth connection seems not encrypted to me. I checked `rfcomm` manual and to my surprise, I found these options:
+    * Second thing, this bluetooth connection seems not encrypted to me and anyone can connect to it. I checked `rfcomm` manual and to my surprise, I found these options:
 
         ```
         -A, --auth                     Enable authentication
@@ -129,7 +129,7 @@ So my plan was pretty simple:
 <img src="{{ site.url }}/img/something.jpg"/>
         </center>
 
-        I tried sniffing bluetooth packets using Wireshark but apparently nowadays laptops have chips which do not allow sniffing someone's else traffic. Unfortunatelly, I don't have bluetooth dongle lying around. Note to myself: I should buy it one day though. Nevermind, let's go! 
+        I tried sniffing bluetooth packets using Wireshark but apparently nowadays laptops have chips which do not allow sniffing someone's else traffic. Unfortunatelly, I don't have bluetooth dongle lying around. Note to myself: I should buy it one day though. Nevermind, let's go! Just be aware that anyone can connect to your Raspberry Pi.
 
 10. Pair with the device
 
@@ -139,8 +139,8 @@ So my plan was pretty simple:
 
     This is another big moment now. Even though it might not be ideal, it's still nice to see that it works. Once you are paired with the Raspberry Pi, you should have a socket available to communicate with the RPI.
 
-    * On \*NIX devices it will be under `/dev/` namely `/dev/cu.raspberrypi-SerialPort`. I just went with `screen /dev/cu.raspberrypi-SerialPort`.
-    * On Windows, serial port should be created and you can find it, for instance, in Device Manger. Once you know the name (let it be `COM3`), fire up [Putty](https://www.putty.org/), check `Connection type` to be `Serial`, enter `COM3` in the `Serial line` field and lastly set a `Speed` ([baud rate](https://learn.sparkfun.com/tutorials/serial-communication/all)) to `115200`. Click `Open`.
+    * On \*NIX systems it will be under `/dev/`, namely `/dev/cu.raspberrypi-SerialPort` in my case. I just went with `screen /dev/cu.raspberrypi-SerialPort`.
+    * On Windows, serial port should be created and you can find it, for instance, in Device Manger. Once you know the name (let it be `COM3`), fire up [Putty](https://www.putty.org/), change `Connection type` to be `Serial`, enter `COM3` in the `Serial line` field and lastly set a `Speed` ([baud rate](https://learn.sparkfun.com/tutorials/serial-communication/all)) to `115200`. Click `Open`.
 
     One way or another, you should have terminal available to you. You can configure the height and width ([stty rows and cols](https://www.mkssoftware.com/docs/man1/stty.1.asp)) or you can leave it for now. If you set the console window right, you can use `tmux` inside and have it all working smoothly.
 
