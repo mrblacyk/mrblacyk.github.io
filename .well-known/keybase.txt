@@ -1,6 +1,6 @@
 ---
 layout: none
-permalink: keybase.txt
+permalink: .well-known/keybase.txt
 ---
 ==================================================================
 https://keybase.io/mrblacyk
@@ -24,13 +24,13 @@ To do so, I am signing this object:
       "username": "mrblacyk"
     },
     "merkle_root": {
-      "ctime": 1585909885,
-      "hash": "c3749ddcab685ddbd0417028906bf63e44ae604207a87d82bd7ece3f1ba54fe405d2a4f72761287cacfd326208bc35f2f4ec1fc689d91d603c3d8aee11fba30f",
-      "hash_meta": "5a5b0ed5f1b612fd3457ded2979cc6286646a7499cb5d297772ef22b8618bc4f",
-      "seqno": 15750430
+      "ctime": 1585912382,
+      "hash": "42f93d8b03f47a4a25fec627f120d400d5a2a09ac0f538708cb89a7a000daf195403f811791d530feef67d7026867ac75b2fa9bedcb2b48dddc8ef5c7bedac1d",
+      "hash_meta": "a01064c1135f7f6c9d78ae304018f0076be048742a01b517ad3a24026153a1fb",
+      "seqno": 15750784
     },
     "service": {
-      "entropy": "JvouzGNM4wV+pf4HY3WV1FsY",
+      "entropy": "4I+re/jpZSSy/uB18/jX/pDR",
       "hostname": "mrblacyk.github.io",
       "protocol": "https:"
     },
@@ -41,16 +41,16 @@ To do so, I am signing this object:
     "name": "keybase.io go client",
     "version": "5.3.0"
   },
-  "ctime": 1585909907,
+  "ctime": 1585912396,
   "expire_in": 504576000,
-  "prev": "056357c85f642c0cc323626d02dbf33c4b3d615a04b33e31a625879cf987001a",
-  "seqno": 8,
+  "prev": "fe09b1e2ac24530decd757ae2a41ce931e4fdb65ec009991f4b7365207dae5e4",
+  "seqno": 17,
   "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgQl73ejQXc+rjX+jK0w9la2z8AED2x+J9BO1gby6B5HkKp3BheWxvYWTESpcCCMQgBWNXyF9kLAzDI2JtAtvzPEs9YVoEsz4xpiWHnPmHABrEIMv/YHZwgVCnUzYVK2MDTERT4tE4/O/SoSY+PVgNy5MHAgHCo3NpZ8RAqzYM6mAIa41f6c8Yir17c+RxOE6lQ42+/+rV2F+FmaMdtOs6aw44CxUoTDSZYv9hVn0l0oFVWKcBkIr3IisvBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOmGCIylCtlPDQfmnO7fIA4Gq4jlpYImGTbSDwSfX4zho3RhZ80CAqd2ZXJzaW9uAQ==
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgQl73ejQXc+rjX+jK0w9la2z8AED2x+J9BO1gby6B5HkKp3BheWxvYWTESpcCEcQg/gmx4qwkUw3s11euKkHOkx5P22XsAJmR9Lc2Ugfa5eTEIEs5d93VYGfhhHOIGJBBTFfI4qHg8cQXTVzDo3jKdknWAgHCo3NpZ8RAVO8acMxonSZW80Of3fZ3dCJVkcyeBRYcmwRfE/c76JpBVei3c0lGnhmCmMYrgLerkQTKr7deOouBrzyvQQmUC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEO+AN2DJiM/Nf0HF8es2vhhsx7wbgoP4DvwZFGXeRwno3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
