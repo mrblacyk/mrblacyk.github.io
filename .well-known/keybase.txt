@@ -1,6 +1,6 @@
 ---
 layout: none
-permalink: .well-known/keybase.txt
+permalink: keybase.txt
 ---
 ==================================================================
 https://keybase.io/mrblacyk
